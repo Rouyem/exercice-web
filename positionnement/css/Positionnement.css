@@ -1,8 +1,45 @@
+/* no position */
+section {
+  padding: 50px;
+}
 div { 
   border: 2px solid black;
   padding: 50px;
+  box-shadow: 10px 5px 5px rgb(83, 82, 82);
 }
 
-#premier {
+.bloc1 {
   background-color: black;
+}
+
+.bloc2 {
+  background-color: rgb(39, 37, 37);
+  position: relative;
+}
+
+.bloc3 {
+  background-color: grey;
+}
+
+/* relative */
+#premier-relative {
+  position: relative;
+  right: 50px;
+}
+
+#deuxieme-relative {
+  position: relative;
+  left: 150px;
+}
+
+#troisieme-relative {
+  position: relative;
+  right: 350px;
+}
+
+/* absolue */
+#troisieme-absolu {
+  position: absolute;
+  top: 200px;
+  left: 500px;
 }
