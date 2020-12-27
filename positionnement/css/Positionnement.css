@@ -1,6 +1,7 @@
 /* no position */
 section {
-  padding: 50px;
+  padding: 200px;
+  position: relative;
 }
 div { 
   border: 2px solid black;
@@ -41,5 +42,105 @@ div {
 #troisieme-absolu {
   position: absolute;
   top: 200px;
-  left: 500px;
+  left: 400px;
+}
+
+/* absolute */
+.bloc{
+  background-color: white;
+  position: relative;
+  bottom: 200px;
+}
+
+#premier-absolute {
+  position: absolute;
+  top: 200px;
+  left: 400px;
+}
+#troisieme-absolute {
+  position: absolute;
+  top: 200px;
+  left: 200px;
+}
+
+/* 5.a absolute */
+
+.bloc4 {
+  background-color:rgb(182, 179, 179);
+}
+
+#blanc {
+  width: 500px;
+  height: 500px;
+  padding: 20px;
+  margin-left: 200px;
+  margin-top: 100px;
+}
+
+#noir {
+  box-sizing: border-box;
+  width: 240px;
+  height: 240px;
+  position: absolute;
+}
+
+#gris-fonce {
+  box-sizing: border-box;
+  width: 240px;
+  height: 240px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+#gris {
+  box-sizing: border-box;
+  width: 240px;
+  height: 240px;
+  position: absolute;
+  bottom: 20px;
+}
+
+#gris-clair {
+  box-sizing: border-box;
+  width: 240px;
+  height: 240px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+/* 5.b-Relative */
+
+#noir-r {
+  box-sizing: border-box;
+  width: 240px;
+  height: 240px;
+  position: relative;
+}
+
+#gris-fonce-r {
+  box-sizing: border-box;
+  width: 240px;
+  height: 240px;
+  position: relative;
+  bottom: 240px;
+  left: 260px;
+}
+
+#gris-r{
+  box-sizing: border-box;
+  width: 240px;
+  height: 240px;
+  position: relative;
+  bottom: 220px;
+}
+
+#gris-clair-r {
+  box-sizing: border-box;
+  width: 240px;
+  height: 240px;
+  position: relative;
+  bottom: 460px;
+  left: 260px;
 }
