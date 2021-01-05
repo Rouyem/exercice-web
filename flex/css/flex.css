@@ -3,5 +3,52 @@
 }
 
 body {
-  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: tomato;
+  text-align: center;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+li {
+  border: 3px solid black;
+  padding: 20px;
+  border-radius: 10%;
+  box-shadow: 10px 5px 5px rgb(83, 82, 82);
+}
+
+a {
+ color: black;
+}
+
+/* --------------------------------------------------------------- */
+
+section {
+  display: flex;
+}
+
+article {
+  background-color: rgb(179, 179, 179);
+}
+
+/* ---------------------------------------------------------------- */
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
 }
