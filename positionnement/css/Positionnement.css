@@ -1,8 +1,10 @@
 /* no position */
 section {
+  margin-top: 100px;
   padding: 200px;
   position: relative;
 }
+
 div { 
   border: 2px solid black;
   padding: 50px;
@@ -74,7 +76,7 @@ div {
   height: 500px;
   padding: 20px;
   margin-left: 300px;
- 
+  margin-top: 250px;
 }
 
 #noir {
@@ -112,6 +114,15 @@ div {
 
 /* 5.b-Relative */
 
+#blanc-r {
+  width: 500px;
+  height: 500px;
+  padding: 20px;
+  margin-left: 300px;
+  margin-top: 250px;
+ 
+}
+
 #noir-r {
   box-sizing: border-box;
   width: 240px;
@@ -146,6 +157,14 @@ div {
 }
 
 /* z-index */
+
+#blanc-z{
+  width: 500px;
+  height: 500px;
+  padding: 20px;
+  margin-left: 300px;
+  margin-top: 250px;
+}
 
 #vert {
   background-color: green ;
@@ -229,12 +248,11 @@ nav {
   padding: 15px;
 }
 
-a {
-  text-decoration: none;
-}
-
 h1, h2 {
   text-align: center;
+}
+.titre {
+  margin-top: -300px;
 }
 
 h1 {
