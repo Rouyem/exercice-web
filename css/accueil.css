@@ -30,20 +30,24 @@ a {
   color: #D79A10;
 }
 
-section {
+article {
   display: flex;
   justify-content: space-around;
 }
 
-.positionnement {
+.inversé {
   flex-direction: row-reverse;
+}
+
+.texte {
+  padding: 20px;
 }
 
 h2 {
   padding: 50px;
 }
 
-div {
+.encadré {
   height: 300px;
   width: 550px;
   border: 3px solid #D79A10;
@@ -55,6 +59,22 @@ img {
   width: 546px;
 }
 
-.jcvd:hover {
+a:hover {
   opacity: 0.5;
+}
+
+.positionnement {
+  padding: 50px;
+}
+
+.positionnement:hover{
+  opacity: 0.5;
+}
+
+#gris {
+  background-color: grey;
+}
+
+#blanc {
+  background-color: white;
 }

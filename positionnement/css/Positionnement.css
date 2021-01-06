@@ -240,12 +240,21 @@ div {
 }
 
 /* menu */
+body {
+  position: relative;
+}
 
 nav {
   background-color:tomato;
-  position: fixed;
+  position: sticky;
+  float: left;
+  top: 10px;
   border-radius: 10%;
   padding: 15px;
+}
+
+a {
+  text-decoration: none;
 }
 
 h1, h2 {
