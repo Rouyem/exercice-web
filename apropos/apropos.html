@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,10 +11,11 @@
     <h1>A propos de moi</h1>
     <nav class="menu">
       <ul>
-        <li><a href="./jcvd/jcvd.html">Exercice html</a></li>
-        <li><a href="./positionnement/positionnement.html">Exercice positionnement</a></li>
-        <li><a href="./flex/flex.html">Excercice flex</a></li>
-        <li><a href="../accueil.html">Accueil</a></li>
+        <li><a href="/exercice-web/accueil.html">Acueil</a></li>
+        <li><a href="/exercice-web/jcvd/jcvd.html">Exercice html</a></li>
+        <li><a href="/exercice-web/positionnement/positionnement.html">Exercice positionnement</a></li>
+        <li><a href="/exercice-web/flex/flex.html">Excercice flex</a></li>
+        <li><a href="/exercice-web/grid/grid.html">Exercice grid</a></li>
       </ul>
     </nav>
   </header>
@@ -51,33 +52,21 @@
           <p>
             <label for="nom">Nom</label>
             <br>
-            <input type="text" name="nom">
+            <input type="text" name="nom" id="nom">
           </p>   
           <p>
             <label for="prenom">Prénom</label>
             <br>
-            <input type="text" name="prenom">
+            <input type="text" name="prenom" id="prenom">
           </p>
           <p>
             <label for="datedenaissance">Date de naissance</label>
             <br>
-            <input type="date" name="datedenaissance">
+            <input type="date" name="datedenaissance" id="datedenaissance">
           </p>     
-          <p>
-            <label for="sexe">Sexe :</label>
-            <br>
-            <label for="homme">
-              <input type="radio" name="sexe">
-              Homme
-            </label>
-            <label for="femme">
-              <input type="radio" name="sexe">
-              Femme
-            </label>
-          </p>
           
           <label for="pays">Pays</label>  
-            <select name="pays" size="1">
+            <select name="pays" size="1" id="pays">
               <option value="france">France</option>
               <option value="italie">Italie</option>
               <option value="allemagne">Allemagne</option>

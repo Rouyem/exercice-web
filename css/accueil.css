@@ -62,7 +62,7 @@ img {
 a:hover {
   opacity: 0.5;
 }
-
+/* ccs exercice positionnement */
 .positionnement {
   padding: 50px;
 }
@@ -77,4 +77,90 @@ a:hover {
 
 #blanc {
   background-color: white;
+}
+
+/* css exercice grid */
+.blanc {
+  background-color: white;
+}
+.rose {
+  background-color: rgb(230, 107, 128);
+}
+#toile {
+  height: 296px;
+  width: 546px;
+  display: grid;
+  grid-template-areas: 
+  'bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01'
+  'bl02 bl02 ro01 ro01 ro01 ro01 ro01 bl03 bl03'
+  'bl02 bl02 ro02 bl04 bl04 bl04 bl04 bl03 bl03'
+  'bl02 bl02 ro02 bl05 bl05 ro03 ro03 ro03 bl06'
+  'bl02 bl02 ro02 bl07 bl07 bl07 ro04 bl08 bl08'
+  'bl02 bl02 ro02 ro05 ro05 ro05 ro05 bl08 bl08'
+  'bl09 bl09 bl09 bl09 bl09 bl09 bl09 bl09 bl09';
+}
+
+#bl01 {
+  grid-area: bl01;
+}
+#bl02 {
+  grid-area: bl02;
+}
+#bl03 {
+  grid-area: bl03;
+}
+#bl04 {
+  grid-area: bl04;
+}
+#bl05 {
+  grid-area: bl05;
+}
+#bl06 {
+  grid-area: bl06;
+}
+#bl07 {
+  grid-area: bl07;
+}
+#bl08 {
+  grid-area: bl08;
+}
+#bl09 {
+  grid-area: bl09;
+}
+#ro01 {
+  grid-area: ro01;
+}
+#ro02 {
+  grid-area: ro02;
+}
+#ro03 {
+  grid-area: ro03;
+}
+#ro04 {
+  grid-area: ro04;
+}
+#ro05 {
+  grid-area: ro05;
+}
+
+#toile:hover {
+  opacity: 0.5;
+}
+
+#toile:hover .blanc {
+  background-color: rgb(230, 107, 128);
+}
+
+#toile:hover .rose {
+  background-color: white;
+}
+
+#mondrian {
+  width: 150px;
+  height: 150px;
+  border: 3px solid #D79A10;
+  box-shadow: 3px 1px 10px #D79A10;
+  border-radius: 50%;
+  margin-top: 30px;
+  margin-left: 178px;
 }
