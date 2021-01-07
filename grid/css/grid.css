@@ -1,7 +1,31 @@
 * {
   box-sizing: border-box;
 }
+body {
+  background-color: black;
+  color: #D79A10;
+}
+header {
+  text-align: center;
+}
+.menu ul{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
 
+.menu li {
+  border: 3px solid #D79A10;
+  padding: 20px;
+  border-radius: 10%;
+  box-shadow: 4px 4px 10px #D79A10;
+}
+
+a {
+  color: #D79A10;
+}
+
+/* couleur */
 .white {
   background-color:  #e6e6e6;
 }
@@ -18,6 +42,7 @@
 .red {
   background-color: #c80707;
 }
+/* template */
 #toile {
   width: 600px;
   height: 400px;
@@ -151,4 +176,26 @@
 }
 #rouge5 {
   grid-area: re05;
+}
+
+/* passage de la souris */
+
+#toile:hover {
+  box-shadow: 10px 10px 10px #D79A10;
+  background-color:  #D79A10;
+}
+#toile:hover .black {
+  background-color: rgb(75, 74, 74);
+}
+#toile:hover .white {
+  background-color: black;
+}
+#toile:hover .yellow {
+  background-color:rgb(207, 207, 207);
+}
+#toile:hover .red {
+  background-color: rgb(163, 162, 162);
+}
+#toile:hover .blue {
+  background-color: grey;
 }
