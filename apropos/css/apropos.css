@@ -28,6 +28,9 @@ header {
 a {
   color: #D79A10;
 }
+a:hover {
+  opacity: 0.5;
+}
 
 hr {
   height: 5px;
@@ -123,4 +126,8 @@ h4 {
 .linkedin img{
   height: 100px;
   width: 100px;
+}
+
+footer {
+  text-align: center;
 }

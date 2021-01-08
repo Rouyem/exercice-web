@@ -25,7 +25,9 @@ header {
 a {
   color: #D79A10;
 }
-
+a:hover {
+  opacity: 0.5;
+}
 /* couleur */
 .white {
   background-color:  #e6e6e6;
@@ -48,7 +50,7 @@ a {
   width: 600px;
   height: 400px;
   box-shadow: 10px 10px 10px #8d8d8d;
-  margin-top: 200px;
+  margin-top: 150px;
   margin-left: auto;
   margin-right: auto;
   display: grid;
@@ -199,4 +201,7 @@ a {
 }
 #toile:hover .blue {
   background-color: grey;
+}
+footer {
+  text-align: center;
 }
