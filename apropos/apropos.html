@@ -5,13 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>a propos de moi</title>
   <link rel="stylesheet" href="css/apropos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 <body>
   <header>
     <h1>A propos de moi</h1>
     <nav class="menu">
       <ul>
-        <li><a href="/exercice-web/accueil.html">Acueil</a></li>
+        <li><a href="/exercice-web/accueil.html">Accueil</a></li>
         <li><a href="/exercice-web/jcvd/jcvd.html">Exercice html</a></li>
         <li><a href="/exercice-web/positionnement/positionnement.html">Exercice positionnement</a></li>
         <li><a href="/exercice-web/flex/flex.html">Excercice flex</a></li>
@@ -32,9 +33,9 @@
   </section>
   <hr>
   <section class="column">
-    <section>
-      <div class="contact">
-        <h2>Informations de contact</h2>
+    <section class="info">
+      <h2>Informations de contact</h2>
+      <div class="contact"> 
         <p>Nom: Emilie ROUY</p>
         <p>Née le 08/07/1983</p>
         <p>Adresse: 107 rue de tivoli - 57070 Metz</p>
@@ -42,9 +43,9 @@
         <p>Téléphone: 06 3X XX XX XX</p>
         <p>Mail: rouyemilie82@gmail.com</p>
       </div>
-      <div class="contact">
-        <a href="#"><img src="" alt="logo facebook"></a>
-        <a href="#"><img src="" alt="logo ll"></a>
+      <div class="contact" id="reseau">
+        <a class="facebook" href="#"><img src="/exercice-web/apropos/image/facebook.png" alt="facebook"></a>
+        <a class="linkedin" href="#"><img src="/exercice-web/apropos/image/linkedin.png" alt="linkedin"></a>
       </div>
       <div class="contact">
         <form action="#" method="POST">
@@ -77,77 +78,27 @@
           </div>
         </form>
       </div>
-      <section>
+      <section class="contact">
         <h2>Langues</h2>
-        <ul>
-          <li>Français: langue natale</li>
-          <li>Anglais: niveau scolaire</li>
-          <li>Espagnol: niveau scolaire</li>
-        </ul>
+        <div class="contact">
+          <ul>
+            <li>Français: langue natale</li>
+            <li>Anglais: niveau scolaire</li>
+            <li>Espagnol: niveau scolaire</li>
+          </ul>
+        </div>
       </section>
-      <section>
+      <section class="contact">
         <h2>Atouts</h2>
-        <ul>
-          <li>Capacité d'écoute</li>
-          <li>Rigueur</li>
-          <li>Travail en équipe</li>
-        </ul>
-      </section>
-    </section>
-    <section class="info">
-      <section>
-        <h2>Formation</h2>
-        <div>
-          <h3>Décembre 2020 à Septembre 2021</h3>
-          <h4>Formation Développeuse intégrateur web PHP orienté objet</h4>
-          <p>Institut Français des Affaires - Metz, France</p>
-          <p>Titre RNCP III (Bac +2)</p>
-        </div>
-        <div id="ran">
-          <h3>Septembre 2020 à Décembre 2020</h3>
-          <h4>Formation Remise à niveau dans les métiers du numérique</h4>
-          <p>Institut Français des Affaires - Metz, France</p>
-          <p>Novembre 2020 - Stage chez " Mise en beauté by J - création de site</p>
-        </div>
-        <div>
-          <h3>2001 - 2003</h3>
-          <h4>BAC STT (science technique tertiaire</h4>
-          <p>Lycée Robert Schuman - Metz, France</p>
-          <p>Première comptabilité-gestion. Terminale informatique-gestion</p>
-        </div>
-        <div>
-          <h3>2000 - 2001</h3>
-          <h4>CAP - BEP Vente Action Marchande</h4>
-          <p>Lycée René Cassin - Metz, France</p>
-          <p>Stage magasin de prêt-à-porter femme FROGGY</p>
-        </div>
-        <div>
-          <h3>1998</h3>
-          <h4>Brevet des collèges</h4>
-          <p>Collège Philippe de Vigneulles - Metz, France</p>
+        <div class="contact">
+          <ul>
+            <li>Capacité d'écoute</li>
+            <li>Rigueur</li>
+            <li>Travail en équipe</li>
+          </ul>
         </div>
       </section>
-      <section>
-        <h2>Expériences professsionnelles</h2>
-        <div>
-          <h3>Novembre 2003 - Février 2020</h3>
-          <h4>Employée commerciale</h4>
-          <p>CORA Metz Technopole - Metz, France</p>
-          <p>Employée fruits et légumes</p>
-        </div>
-        <div>
-          <h3>Avril 2003 - Septembre 2003</h3>
-          <h4>Employée polyvalente</h4>
-          <p>Zoo d'Amnéville - Amnéville, France</p>
-          <p>Restauration rapide, vendeuse boutique</p>
-        </div>
-        <div>
-          <h3>Juillet 2001 - Août 2001</h3>
-          <h4>Vendeuse</h4>
-          <p> Boutique Froggy - Metz, France</p>
-        </div>
-      </section>
-      <section>
+      <section class="contact">
         <h2>Compétences</h2>
         <div class="comp">
           <p>HTML/CSS</p>
@@ -170,6 +121,60 @@
           <div class="barre"><span class="bar c85"></span></div>
         </div>
       </section>    
+    </section>
+    <section class="info">
+      <section>
+        <h2>Formation</h2>
+        <div class="information">
+          <h3>Décembre 2020 à Septembre 2021</h3>
+          <h4>Formation Développeuse intégrateur web PHP orienté objet</h4>
+          <p>Institut Français des Affaires - Metz, France</p>
+          <p>Titre RNCP III (Bac +2)</p>
+        </div>
+        <div class="information">
+          <h3>Septembre 2020 à Décembre 2020</h3>
+          <h4>Formation Remise à niveau dans les métiers du numérique</h4>
+          <p>Institut Français des Affaires - Metz, France</p>
+          <p>Novembre 2020 - Stage chez " Mise en beauté by J - création de site</p>
+        </div>
+        <div class="information">
+          <h3>2001 - 2003</h3>
+          <h4>BAC STT (science technique tertiaire</h4>
+          <p>Lycée Robert Schuman - Metz, France</p>
+          <p>Première comptabilité-gestion. Terminale informatique-gestion</p>
+        </div>
+        <div class="information">
+          <h3>2000 - 2001</h3>
+          <h4>CAP - BEP Vente Action Marchande</h4>
+          <p>Lycée René Cassin - Metz, France</p>
+          <p>Stage magasin de prêt-à-porter femme FROGGY</p>
+        </div>
+        <div class="information">
+          <h3>1998</h3>
+          <h4>Brevet des collèges</h4>
+          <p>Collège Philippe de Vigneulles - Metz, France</p>
+        </div>
+      </section>
+      <section>
+        <h2>Expériences professsionnelles</h2>
+        <div class="information">
+          <h3>Novembre 2003 - Février 2020</h3>
+          <h4>Employée commerciale</h4>
+          <p>CORA Metz Technopole - Metz, France</p>
+          <p>Employée fruits et légumes</p>
+        </div>
+        <div class="information">
+          <h3>Avril 2003 - Septembre 2003</h3>
+          <h4>Employée polyvalente</h4>
+          <p>Zoo d'Amnéville - Amnéville, France</p>
+          <p>Restauration rapide, vendeuse boutique</p>
+        </div>
+        <div class="information">
+          <h3>Juillet 2001 - Août 2001</h3>
+          <h4>Vendeuse</h4>
+          <p> Boutique Froggy - Metz, France</p>
+        </div>
+      </section>
     </section>
   </section>
   <footer>

@@ -55,16 +55,28 @@ hr {
 
 .column {
   display: flex;
+  justify-content: center;
 }
 .info {
   display: flex;
   flex-direction: column;
   padding: 100px;
 }
-/* section info */
-.contact {
-  margin-top: 100px;
+h2 {
+  font-size: 40px;
 }
+h3 {
+  font-size: 25px;
+}
+h4 {
+  font-size: 20px;
+}
+
+  /* section info */
+.contact {
+  margin-top: 50px;
+}
+
 /* section compétence */
 .comp {
   display: flex;
@@ -97,4 +109,18 @@ hr {
 .c85 {
   width: 85%;
   background-color: #D79A10 ;
+}
+
+.information {
+  padding-top: 30px;
+}
+
+/* reseau */
+.facebook img {
+  height: 100px;
+  width: 100px;
+}
+.linkedin img{
+  height: 100px;
+  width: 100px;
 }
