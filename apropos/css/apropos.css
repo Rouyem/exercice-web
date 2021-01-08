@@ -61,3 +61,40 @@ hr {
   flex-direction: column;
   padding: 100px;
 }
+/* section info */
+.contact {
+  margin-top: 100px;
+}
+/* section compétence */
+.comp {
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 10px;
+}
+.comp p {
+  flex: 0 0 40%;
+}
+.barre {
+  flex: 0 0 60%;
+  border: 3px solid #D79A10;
+}
+.bar {
+  display: block;
+  height: 100%;
+}
+.c90 {
+  width: 90%;
+  background-color: #D79A10 ;
+}
+.c50 {
+  width: 50%;
+  background-color: #D79A10 ;
+}
+.c80 {
+  width: 80%;
+  background-color: #D79A10 ;
+}
+.c85 {
+  width: 85%;
+  background-color: #D79A10 ;
+}
