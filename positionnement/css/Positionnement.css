@@ -12,7 +12,7 @@ div {
 }
 
 .bloc1 {
-  background-color: black;
+  background-color: rgb(31, 11, 11);
 }
 
 .bloc2 {
@@ -207,7 +207,9 @@ div {
 }
 
 /* 7-propriété float */
-
+#float {
+  background-color: white;
+}
 .bloc0 {
   padding: 0;
   height: 254px;
@@ -242,19 +244,28 @@ div {
 /* menu */
 body {
   position: relative;
+  color: #D79A10;
+  background-color: black;
 }
 
 nav {
-  background-color:tomato;
   position: sticky;
   float: left;
   top: 10px;
-  border-radius: 10%;
-  padding: 15px;
 }
-
+ul {
+  
+  list-style: none;
+}
+li {
+  border: 3px solid #D79A10;
+  padding: 20px;
+  border-radius: 10%;
+  box-shadow: 4px 4px 10px #D79A10;
+}
 a {
   text-decoration: none;
+  color: #D79A10;
 }
 
 h1, h2 {
@@ -274,5 +285,4 @@ h1 {
 footer {
   background-color:black;
   text-align: center;
-  color: white;
 }
