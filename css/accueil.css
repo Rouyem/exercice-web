@@ -88,21 +88,44 @@ a:hover {
 .blanc {
   background-color: white;
 }
-.rose {
-  background-color: rgb(230, 107, 128);
+.brunf {
+  background-color: #3b1e05;
+}
+.brunc {
+  background-color: #f3a35d;
+}
+.bleu {
+  background-color: blue;
+}
+.marron {
+  background-color:  #522a08;
+}
+.turquoise {
+  background-color: rgb(0, 255, 213);
 }
 #toile {
   height: 296px;
   width: 546px;
   display: grid;
+  grid-gap: 2px;
   grid-template-areas: 
-  'bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01'
-  'bl02 bl02 ro01 ro01 ro01 ro01 ro01 bl03 bl03'
-  'bl02 bl02 ro02 bl04 bl04 bl04 bl04 bl03 bl03'
-  'bl02 bl02 ro02 bl05 bl05 ro03 ro03 ro03 bl06'
-  'bl02 bl02 ro02 bl07 bl07 bl07 ro04 bl08 bl08'
-  'bl02 bl02 ro02 ro05 ro05 ro05 ro05 bl08 bl08'
-  'bl09 bl09 bl09 bl09 bl09 bl09 bl09 bl09 bl09';
+  'bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01 bl01'
+  'bl02 bf01 bf01 bf01 bf01 bf01 bf01 bf01 bf01 bf01 bf01 bf01 bf01 bl03'
+  'bl02 bf01 bf01 bf01 bf01 bf01 bf01 bf01 bf01 bf01 bf01 bf01 bf01 bl03'
+  'bl02 bf01 bf01 bf01 bf01 bf01 bf01 bf01 bf01 bf01 bf01 bf01 bf01 bl03'
+  'bl02 bf02 bf02 bc01 bc01 bc01 bc01 bc01 bc01 bc01 bc01 bf03 bf03 bl03'
+  'bl02 bf02 bf02 bc01 bc01 bc01 bc01 bc01 bc01 bc01 bc01 bf03 bf03 bl03'
+  'bl02 bc02 bc02 bc02 bc02 bc02 bc02 bc02 bc02 bc02 bc02 bc02 bc02 bl03'
+  'bl02 bc03 bc03 bl04 ble1 ble1 bc04 bc04 ble2 ble2 bl05 bc05 bc05 bl03'
+  'bl02 bc03 bc03 bl04 ble1 ble1 bc04 bc04 ble2 ble2 bl05 bc05 bc05 bl03'
+  'bl02 bc06 bc06 bc06 bc06 bc06 ma01 ma01 bc07 bc07 bc07 bc07 bc07 bl03'
+  'bl02 bc06 bc06 bc06 bc06 bc06 ma01 ma01 bc07 bc07 bc07 bc07 bc07 bl03'
+  'bl02 bc08 bc08 bc08 bf04 bf04 bc09 bc09 bf05 bf05 bc10 bc10 bc10 bl03'
+  'bl02 bc08 bc08 bc08 bf04 bf04 bc09 bc09 bf05 bf05 bc10 bc10 bc10 bl03'
+  'bl02 bc08 bc08 bc08 bf04 bf04 bf06 bf06 bf05 bf05 bc10 bc10 bc10 bl03'
+  'bl02 bc08 bc08 bc08 bf04 bf04 bf06 bf06 bf05 bf05 bc10 bc10 bc10 bl03'
+  'tu01 tu01 tu01 tu01 tu01 tu01 tu01 tu01 tu01 tu01 tu01 tu01 tu01 tu01'
+  'tu01 tu01 tu01 tu01 tu01 tu01 tu01 tu01 tu01 tu01 tu01 tu01 tu01 tu01';
 }
 
 #bl01 {
@@ -120,46 +143,72 @@ a:hover {
 #bl05 {
   grid-area: bl05;
 }
-#bl06 {
-  grid-area: bl06;
+#bf01 {
+  grid-area: bf01;
 }
-#bl07 {
-  grid-area: bl07;
+#bf02 {
+  grid-area: bf02;
 }
-#bl08 {
-  grid-area: bl08;
+#bf03 {
+  grid-area: bf03;
 }
-#bl09 {
-  grid-area: bl09;
+#bf04 {
+  grid-area: bf04;
 }
-#ro01 {
-  grid-area: ro01;
+#bf05 {
+  grid-area: bf05;
 }
-#ro02 {
-  grid-area: ro02;
+#bf06 {
+  grid-area: bf06;
 }
-#ro03 {
-  grid-area: ro03;
+#bc01 {
+  grid-area: bc01;
 }
-#ro04 {
-  grid-area: ro04;
+#bc02 {
+  grid-area: bc02;
 }
-#ro05 {
-  grid-area: ro05;
+#bc03 {
+  grid-area: bc03;
 }
-
-#toile:hover {
-  opacity: 0.5;
+#bc04 {
+  grid-area: bc04;
 }
-
-#toile:hover .blanc {
-  background-color: rgb(230, 107, 128);
+#bc05 {
+  grid-area: bc05;
 }
-
-#toile:hover .rose {
-  background-color: white;
+#bc06 {
+  grid-area: bc06;
 }
-
+#bc07 {
+  grid-area: bc07;
+}
+#bc08 {
+  grid-area: bc08;
+}
+#bc09 {
+  grid-area: bc09;
+}
+#bc10 {
+  grid-area: bc10;
+}
+#ble1 {
+  grid-area: ble1;
+}
+#ble2 {
+  grid-area: ble2;
+}
+#ma01 {
+  grid-area: ma01;
+}
+#tu01 {
+  grid-area: tu01;
+}
+#toile:hover .bleu {
+  background-color: red;
+}
+#toile:hover .brunc {
+  background-color: rgb(248, 38, 38);
+}
 #mondrian {
   width: 150px;
   height: 150px;
