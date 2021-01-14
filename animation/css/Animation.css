@@ -95,3 +95,205 @@ div {
     left: 100px;
   }
 }
+
+/* loader */
+#telechargement {
+  background-image: url(../images/loader1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.loader {
+  height: 100px;
+  width:  100px;
+  border-radius: 50%;
+  border: 0;
+  box-shadow: 0 0 0;
+  background-color: black;
+  animation-name: loader;
+  animation-duration: 3s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+.loader:nth-child(2) {
+  animation-delay: 1s;
+}
+.loader:nth-child(3) {
+  animation-delay: 2s;
+}
+@keyframes loader {
+  from {
+    background-color :black;
+  }
+  to {
+    background-color : white;
+  }
+}
+
+/* rend fou */
+.tete {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+#rendfou {
+  position: relative;
+  background-image: url(../images/rendfou.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.visage {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 0;
+  box-shadow: 0 0 0;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation-name: rendfou;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+.visage:nth-child(2) {
+  animation-delay: 1s;
+}
+.visage:nth-child(3) {
+  animation-delay: 2s;
+}
+.visage:nth-child(4) {
+  animation-delay: 3s;
+}
+.visage:nth-child(5) {
+  animation-delay: 4s;
+}
+@keyframes rendfou {
+  0% {
+    top: 0;
+    left: 0;
+    background-color: black;
+  }
+  30% {
+    top: 0;
+    left: 515px;
+    transform: rotate(360deg);
+    background-color: red;
+  }
+  50% {
+    top: 415px;
+    left: 515px;
+    transform: rotate(100deg);
+    background-color: yellow;
+  }
+  80% {
+    top: 415px;
+    left: 0;
+    transform: rotate(360deg);
+    background-color: green;
+  }
+  100% {
+    top: 0;
+    left: 0;
+    transform: rotate(100deg);
+    background-color: blue;
+  }
+}
+.yeux {
+  background-color: white;
+  border: black solid 5px;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+.yeux:nth-child(1) {
+  top: 290px;
+  left: 140px;
+}
+.yeux:nth-child(2) {
+  top: 150px;
+  left: 340px;
+}
+.oeil {
+  background-color: black;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  animation-name: yeux;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+@keyframes yeux {
+  0% {
+    top: 5px;
+    left: 15px;
+  }
+  25% {
+    top: 20px;
+    left: 50px;
+  }
+  50% {
+    top: 60px;
+    left: 15px;
+  }
+  75% {
+    top: 20px;
+    left: 5px;
+  }
+  100%
+  {
+    top: 5px;
+    left: 15px;
+  }
+}
+/* carrousel */
+.photo {
+  height: 195px;
+  width: 195px;
+}
+.carrousel {
+  perspective: 800;
+  display: flex;
+  justify-content: center;
+}
+#toutdiapo {
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  border: 0;
+  box-shadow: 0 0 0;
+  transform-style: preserve-3d;
+  position: absolute;
+}
+.diapo {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+}
+#toutdiapo div:nth-child(1){
+  transform: translateZ(200px);
+}
+#toutdiapo div:nth-child(2){
+  transform: rotateY(72deg) translateZ(200px);
+}
+#toutdiapo div:nth-child(3){
+  transform: rotateY(144deg) translateZ(200px);
+}
+#toutdiapo div:nth-child(4){
+  transform: rotateY(216deg) translateZ(200px);
+}
+#toutdiapo div:nth-child(5){
+  transform: rotateY(288deg) translateZ(200px);
+}
+#toutdiapo div:nth-child(6){
+  transform: rotateY(360deg) translateZ(200px);
+}
