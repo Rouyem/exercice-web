@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #D79A10;
+  background-color: black;
+}
+
+header {
+  text-align: center; 
+  height: 200px;
+}
+
+.menu ul{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.menu li {
+  border: 3px solid #D79A10;
+  padding: 20px;
+  border-radius: 10%;
+  box-shadow: 4px 4px 10px #D79A10;
+}
+
+.menu a {
+  color: #D79A10;
+}
+.imgmeteo {
+  height: 600px;
+  width: 100%;
+}
+img {
+  width: 150px;
+  height: 150px;
+}
+section {
+  display: flex;
+  align-items: center;
+}
+.temp {
+  font-size: 150px;
+}
+td {
+  padding: 30px;
+}
+.temperature {
+  font-weight: bold;
+}
+.info {
+  margin-left: 500px;
+}
+h2 {
+  font-size: 100px;
+}
+
+/*tableau en dessous de 900px */
+@media screen and (max-width: 900px) {
+  
+   
+}
