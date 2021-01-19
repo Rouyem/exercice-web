@@ -1,4 +1,7 @@
 * {
+  width: 100%;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 .container {
@@ -6,6 +9,15 @@
 }
 .row {
   width: 100%;
+  margin-bottom: 15px;
+}
+.row > div {
+  float: left;
+}
+.row::after {
+  clear: both;
+  content:'';
+  display: table;
 }
 .col-xs-1 {
   width: calc(100%/12);
@@ -101,6 +113,7 @@
   }
   .col-md-6 {
     width: calc(600%/12);
+    height: 576.8px;
   }
   .col-md-7 {
     width: calc(700%/12);
@@ -165,6 +178,74 @@ img {
   width: 150px;
   height: 150px;
 }
+.image {
+  float: left;
+  padding: 20px;
+}
 
+.logo {
+  width: 50px;
+  height: 50px;
+}
+/* menu hamburger */
+#hamburger {
+  display: none;
+}
+#hamburger-logo {
+  cursor: pointer;
+  background: black;
+  width: 200px;
+  display: block;
+  color:#d79a10;
+  /* Pour que le menu hamburger s'affiche toujours */
+  text-align: right;
+  /* Pour que le menu hamburger soit "rangé" par défaut */
+  transform: translateX(-168px);
+  padding: 10px;
+}
 
+nav {
+  display: flex;
+  flex-direction: column;
+  background: black;
+  overflow: hidden;
+  width: 200px;
+  /* Pour que les liens soient "rangés" par défaut */
+  transform: translateX(-200px);
+}
 
+#hamburger-logo,
+nav {
+  /* Pour qu'il y ait une animation */
+  transition: 0.7s;
+}
+
+/* Lorsque #hamburger est coché, le #hamburger-logo et le nav qui sont dans le même parent changent de propriété */
+#hamburger:checked ~ #hamburger-logo,
+#hamburger:checked ~ nav {
+  /* Changement de la position pour afficher les menus */
+  transform: translate(0);
+}
+nav a {
+  color: #d79a10;
+  text-decoration: none;
+  padding: 10px;
+}
+nav a:hover {
+  opacity: 0.5;
+}
+
+p {
+  padding: 20px;
+}
+.centre, footer {
+  text-align: center;
+}
+.article {
+  background-color:#d79a10;
+  color: black;
+  border-radius: 5%;
+}
+.lesarticles {
+  padding: 20px;
+}
