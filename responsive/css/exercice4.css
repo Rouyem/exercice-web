@@ -4,6 +4,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+  background-color: black;
+  color: #d79a10
+}
 .container {
   width: 100%;
 }
@@ -12,6 +16,7 @@
   margin-bottom: 15px;
 }
 .row > div {
+  box-sizing: border-box;
   float: left;
 }
 .row::after {
@@ -133,6 +138,12 @@
   .col-md-12 {
     width: calc(1200%/12);
   }
+  #menutel, #imagelogo {
+    display: none;
+  }
+  #dernier {
+    margin-left: calc(300%/12);
+  }
 }
 
 @media screen and (min-width:1200px) {
@@ -172,6 +183,9 @@
   .col-lg-12 {
     width: calc(1200%/12);
   }
+  #dernier {
+    margin-left: 0;
+  }
 }
 
 img {
@@ -193,37 +207,27 @@ img {
 }
 #hamburger-logo {
   cursor: pointer;
-  background: black;
   width: 200px;
   display: block;
   color:#d79a10;
-  /* Pour que le menu hamburger s'affiche toujours */
   text-align: right;
-  /* Pour que le menu hamburger soit "rangé" par défaut */
   transform: translateX(-168px);
   padding: 10px;
 }
-
-nav {
+#menu1 {
   display: flex;
   flex-direction: column;
   background: black;
   overflow: hidden;
   width: 200px;
-  /* Pour que les liens soient "rangés" par défaut */
   transform: translateX(-200px);
 }
-
 #hamburger-logo,
-nav {
-  /* Pour qu'il y ait une animation */
+#menu1 {
   transition: 0.7s;
 }
-
-/* Lorsque #hamburger est coché, le #hamburger-logo et le nav qui sont dans le même parent changent de propriété */
 #hamburger:checked ~ #hamburger-logo,
-#hamburger:checked ~ nav {
-  /* Changement de la position pour afficher les menus */
+#hamburger:checked ~ #menu1 {
   transform: translate(0);
 }
 nav a {
@@ -231,6 +235,7 @@ nav a {
   text-decoration: none;
   padding: 10px;
 }
+
 nav a:hover {
   opacity: 0.5;
 }
@@ -241,11 +246,19 @@ p {
 .centre, footer {
   text-align: center;
 }
+
 .article {
   background-color:#d79a10;
   color: black;
   border-radius: 5%;
 }
+
 .lesarticles {
   padding: 20px;
+}
+
+@media screen and (max-width:900px) {
+  #menu2 {
+    display: none;
+  }
 }
